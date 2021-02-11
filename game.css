@@ -1,11 +1,13 @@
 body{
    color: #fff
+   
 }
 
 h1 {
    font-size: 4rem;
    color: #fff;
    margin-bottom: 5rem;
+   min-width: none;
 
 }
 
@@ -16,7 +18,8 @@ h1 {
    border-radius: 4px;
    background: rgb(18,93,255);
    font-size: 3rem;
-   min-width: 80rem;
+   min-width: none;
+
 }
 
 .choice-container:hover{
@@ -36,6 +39,8 @@ h1 {
 .choice-text{
    padding: 2rem;
    width: 100%;
+   min-width: none;
+
 
 }
 
@@ -51,16 +56,22 @@ h1 {
 #hud {
    display: flex;
    justify-content: space-between;
+   min-width: none;
+
 }
 
 .hud-prefix{
    text-align: center;
    font-size: 2rem;
+   min-width: none;
+
 
 }
 
 .hud-main-text{
    text-align: center;
+   min-width: none;
+
 }
 
 #progressBar {
@@ -70,6 +81,8 @@ h1 {
    margin-top: 2rem;
    border-radius: 50px;
    overflow: hidden;
+   min-width: none;
+
 }
 
 #progressBarFull{
@@ -80,6 +93,7 @@ h1 {
 
 @media screen and (max-width: 768px){
    .choice-container{
-      min-width: 40rem;
+      min-width: none;
+      
    }
 }

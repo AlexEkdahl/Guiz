@@ -1,4 +1,49 @@
-:root{
-   background-color: rgb(29,26,26)
+body{
+   color: #fff
 }
+
+h1 {
+   min-width: none;
+}
+
+.container{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 80rem;
+   margin: 0 auto;
+
+   min-width: none;
+
+
+}
+
+.flex-column{
+   display: flex;
+   flex-direction: column;
+   min-width: none;
+
+
+}
+
+.flex-center{
+   justify-content: center;
+   align-items: center;
+}
+
+#github {
+   font-size: 5rem;
+}
+
+
+@media screen and (max-width: 768px){
+   .choice-container{
+      min-width: none;
+      
+   }
+}
+
+
 
