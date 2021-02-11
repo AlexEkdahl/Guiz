@@ -3,10 +3,10 @@ body{
 }
 
 h1 {
-   font-size: 2rem;
-   text-align: left;
-   margin-bottom: 2rem; 
-   margin: 1.5rem;
+   font-size: 4rem;
+   color: #fff;
+   margin-bottom: 5rem;
+
 }
 
 .choice-container{
@@ -15,7 +15,7 @@ h1 {
    width: 100%;
    border-radius: 4px;
    background: rgb(18,93,255);
-   font-size: 1.5rem;
+   font-size: 3rem;
    min-width: 80rem;
 }
 

@@ -4,19 +4,19 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Homepage</title>
+   <title>High Scores</title>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="highscores.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 <body>
    <div class="container">
-      <div id="home" class="flex-column flex-center">
-         <h1>Are you ready?</h1>
-         <a href="/game.html" class="btn">Play</a>
-         <a href="/highscores.html" id="highscore-btn" 
-         class="btn">High scores<i class="fas fa-crown"></i></a>
-         <a href="/about.html" id="about-bt" 
-         class="btn1">About</a>
+      <div id="highScores" class="flex-center flex-column">
+         <h1 id="finalScore">Leaderboard</h1>
+         <ul id="highScoresList"></ul>
+         <a href="/" class="btn">Go Home<i class="fas fa-home"></i></a>
       </div>
    </div>
+   <script src="highscores.js"></script>
 </body>
+</html>
