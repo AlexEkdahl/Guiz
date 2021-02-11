@@ -57,7 +57,7 @@ startGame = () => {
 
 }
 
-getNewQuestion = () =>{
+const getNewQuestion = () =>{
    if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS){
       localStorage.setItem('mostRecentScore', score)
       return window.location.assign('/end.html')
@@ -77,7 +77,6 @@ getNewQuestion = () =>{
    })
 
    availableQuestions.splice(questionsIndex, 1)
-
    acceptingAnswers = true
 }
 
@@ -105,7 +104,7 @@ choices.forEach(choice => {
    })
 })
 
-incrementScore = num => {
+const incrementScore = num => {
    score += num
    scoreText.innerText = score
 }
