@@ -1,49 +1,64 @@
-body{
-   color: #fff
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400';
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+   background-color: rgb(29,26,26)
+}
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-size: 62.5%;
+   font-family: "Nova square", cursive;
 }
 
-h1 {
+div.absolute-center {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 1;
+    visibility: visible;
+    
+    transition: all .5s;
+}
+
+.btn{
+   font-size: 2.4rem;
+   padding: 2rem 0;
+   width: 20rem;
+   text-align: center;
+   margin-bottom: 1rem;
+   text-decoration: none;
+   color: rgb(28,26,26);
+   background: linear-gradient(90deg, rgb(18,92,255) 0%, rgb(0,102,255) 100%);
+   border-radius: 4px;
    min-width: none;
-}
-
-.container{
-   width: 100vw;
-   height: 100vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   max-width: 80rem;
-   margin: 0 auto;
-
-   min-width: none;
-
 
 }
 
-.flex-column{
-   display: flex;
-   flex-direction: column;
-   min-width: none;
-
-
+.btn:hover{
+   cursor: pointer;
+   box-shadow: 0 0.4rem 1.4rem 0 rgba(8, 114, 244,0.6);
+   transition: transform 150ms;
+   transform: scale(1.03);
 }
 
-.flex-center{
-   justify-content: center;
-   align-items: center;
+.fa-home {
+   margin-left: 1rem;
+   font-size: 2rem;
+   color: rgba()28, 26, 26;
 }
 
-#github {
-   font-size: 5rem;
+canvas {
+ z-index: -1;
 }
-
-
-@media screen and (max-width: 768px){
-   .choice-container{
-      min-width: none;
-      
-   }
-}
-
-
-
